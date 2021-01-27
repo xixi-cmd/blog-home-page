@@ -13,7 +13,19 @@ html,body {
      height: 100%;
      width: 100%;
      place-items: center;
+     background-color: rgb(51, 51, 51);
+     background-repeat: no-repeat;
+     background-size: cover;
+     -o-background-size: cover;
+     background-position: center 0;
+     -webkit-background-size: cover;
      background: url(https://upimage.alexhchu.com/2021/01/27/b0ddb814ae4fd.png);
+}
+
+body {
+     position: relative;
+     max-width: 100%;
+     min-width: 807px;
 }
 
 .wrapper {
@@ -127,6 +139,7 @@ html,body {
 }
 
         .btn-box {
+             padding-bottom: 20px;
             width: 800px;
             display: flex;
             justify-content: center;
@@ -241,6 +254,8 @@ a:active{
 }
 
 .tou {
+     display: inline-flex;
+     text-align: center;
      width: 190px;
      /* float:left;margin-right:8px;padding:1px;border:1px solid #cfd9e1;width:40px;height:40px; 设置图像的长和宽 */
      border-radius: 50%;
@@ -265,3 +280,42 @@ a:active{
 .box-link {
      color: #fff;
 }
+
+
+#github svg {
+	transition: all 1s;
+	fill: #222;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	width: 80px;
+	height: 80px;
+}
+#github:hover svg {
+	width: 160px;
+	height: 160px;
+}
+
+/*
+ 鼠标
+*/
+
+body {
+     background-attachment: fixed;
+     cursor: url(https://api.vvhan.com/static/img/normal.cur), auto
+}
+
+a {
+     cursor: url(https://api.vvhan.com/static/img/normal.cur), auto
+}
+
+a:active {
+     cursor: url(https://api.vvhan.com/static/img/normal.cur), alias
+}
+
+.github-corner:hover 
+    .octo-arm{animation:octocat-wave 560ms ease-in-out}
+    @keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner 
+    .octo-arm{animation:octocat-wave 560ms ease-in-out}}
